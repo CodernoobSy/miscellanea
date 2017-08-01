@@ -26,6 +26,8 @@ public class binarySearch {
 				min = mid + 1;
 			}
 			mid = (max + min) / 2;
+			if (min > max)
+			return -1;
 		}
 		return mid;
 	}
